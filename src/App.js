@@ -1,17 +1,8 @@
 import React from 'react';
 
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 import logo from './logo.svg';
-
-// eslint-disable-next-line no-unused-vars
-const GlobalStyle = createGlobalStyle`
-
-  body {
-    padding: 0;
-    margin: 0;
-  }
-`;
 
 const Div = styled.div`
   text-align: center;

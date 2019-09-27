@@ -71,8 +71,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "standard"
+      "react-app"
     ]
   },
   "browserslist": {
