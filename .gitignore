@@ -646,5 +646,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/git,node,react,linux,macos,windows,sublimetext,reactnative,webstorm+all,intellij+all,jetbrains+all,visualstudiocode
-
-/.idea/
