@@ -20,7 +20,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -30,7 +30,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn run eject`
+### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -66,7 +66,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `yarn run build` fails to minify
+### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
@@ -79,10 +79,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 https://yarnpkg.com/en/docs/install#mac-stable 
 
-### `BUILD_MODE=live yarn run build `
+### `BUILD_MODE=live yarn build `
 
 Live URL로 빌드
 
-### `yarn run build` or `BUILD_MODE=test yarn run build`
+### `yarn build` or `BUILD_MODE=test yarn build`
 
 TEST URL로 빌드
