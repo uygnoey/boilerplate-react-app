@@ -32,9 +32,9 @@ class Demo extends Component {
     getDiscountsId(form.get_id).then((res) => {
       this.setState({
         data: res.data
-      }).catch(e => {
-        alert(e);
       });
+    }).catch(e => {
+      alert(e);
     });
   }
 
@@ -43,9 +43,9 @@ class Demo extends Component {
     postDiscounts(form.post_id, form.postBody).then((res) => {
       this.setState({
         data: res.data
-      }).catch(e => {
-        alert(e);
       });
+    }).catch(e => {
+      alert(e);
     });
   }
 
@@ -54,9 +54,9 @@ class Demo extends Component {
     putDiscountsId(form.put_id, form.putBody).then((res) => {
       this.setState({
         data: res.data
-      }).catch(e => {
-        alert(e);
       });
+    }).catch(e => {
+      alert(e);
     });
   }
 
