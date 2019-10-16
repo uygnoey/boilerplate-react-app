@@ -29,7 +29,8 @@ const apiServer = axios.create({
   baseURL: config.uri,
   headers: { 'X-Requested-With': 'XMLHttpRequest' }
 });
-apiServer.defaults.withCredentials = true;
+
+apiServer.defaults.withCredentials = false;
 apiServer.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 apiServer.interceptors.request.use((config) => {
@@ -50,17 +51,17 @@ apiServer.interceptors.response.use((response) => {
 
   return response;
 }, (error) => {
-  console.error('response ERROR', error);
+  console.error('response ERROR', JSON.stringify(error));
 
-  // if (error.response.status === 403) {
-  //   alert(error.response.data);
-  // } else if (error.response.status === 500) {
-  //   alert('Server Internal Error');
-  // } else if (error.response.status === 401) {
-  //   alert('Unauthorized! Please sign in!');
-  //   // TODO: 로그인 페이지로 redirecting path setting
-  //   this.props.history.push('/signin');
-  // }
+  if (error.response.status === 403) {
+    alert(error.response.data);
+  } else if (error.response.status === 500) {
+    alert('Server Internal Error');
+  } else if (error.response.status === 401) {
+    alert('Unauthorized! Please sign in!');
+    // TODO: 로그인 페이지로 redirecting path setting
+    this.props.history.push('/signin');
+  }
 
   return Promise.reject(error);
 });

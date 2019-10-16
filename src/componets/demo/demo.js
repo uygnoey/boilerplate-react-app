@@ -22,6 +22,8 @@ class Demo extends Component {
       this.setState({
         data: res.data
       });
+    }).catch(e => {
+      alert(e);
     });
   }
 
@@ -30,6 +32,8 @@ class Demo extends Component {
     getDiscountsId(form.get_id).then((res) => {
       this.setState({
         data: res.data
+      }).catch(e => {
+        alert(e);
       });
     });
   }
@@ -39,6 +43,8 @@ class Demo extends Component {
     postDiscounts(form.post_id, form.postBody).then((res) => {
       this.setState({
         data: res.data
+      }).catch(e => {
+        alert(e);
       });
     });
   }
@@ -48,6 +54,8 @@ class Demo extends Component {
     putDiscountsId(form.put_id, form.putBody).then((res) => {
       this.setState({
         data: res.data
+      }).catch(e => {
+        alert(e);
       });
     });
   }
@@ -136,7 +144,7 @@ class Demo extends Component {
         <button onClick={this.putDiscountsApi.bind(this)}>Put Discounts DATA</button>
 
         <p>Result</p>
-        <textarea disabled={true} value={JSON.stringify(this.state.data)}/>
+        <textarea disabled={true} value={JSON.stringify(this.state.data, null, 2)} cols={200} rows={30} />
       </div>
     );
   }
