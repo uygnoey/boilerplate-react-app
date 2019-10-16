@@ -136,7 +136,7 @@ class Demo extends Component {
         <button onClick={this.putDiscountsApi.bind(this)}>Put Discounts DATA</button>
 
         <p>Result</p>
-        <textarea disabled={true} value={_.toString(this.state.data)}/>
+        <textarea disabled={true} value={JSON.stringify(this.state.data)}/>
       </div>
     );
   }
